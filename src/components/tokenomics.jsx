@@ -1,4 +1,3 @@
-import React from "react";
 import donut from "../assets/images/all_donut.svg";
 import donut_mobile from "../assets/images/all_donut_mobile.svg";
 

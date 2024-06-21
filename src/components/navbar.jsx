@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/images/brand_logo.svg";
 
 const navlinks = [
@@ -11,6 +11,7 @@ const navlinks = [
   { name: "Contact", path: "#contact" },
 ];
 
+// eslint-disable-next-line react/prop-types
 const MobileNavLinks = ({ setIsOpen }) => (
   <div className="h-[100vh] w-full bg-black flex flex-col items-center justify-center">
     <ul className="flex flex-col items-center">
@@ -22,6 +23,7 @@ const MobileNavLinks = ({ setIsOpen }) => (
   </div>
 );
 
+// eslint-disable-next-line react/prop-types
 const NavMenu = ({ setIsOpen }) => (
   <>
     {navlinks.map((link, index) => (

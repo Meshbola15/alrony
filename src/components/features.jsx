@@ -1,4 +1,3 @@
-import React from "react";
 import icon_1 from "../assets/images/features_icon_1.svg";
 import icon_2 from "../assets/images/features_icon_2.svg";
 import icon_3 from "../assets/images/features_icon_3.svg";
@@ -32,14 +31,19 @@ const features = [
 ];
 const Features = () => {
   const renderFeatures = () => {
-    return features.map((feature) => (
-      <div className="bg-opacity-50 bg-[#28261c] border border-border rounded-xl px-[20px] py-[20px] md:px-[30px] md:py-[30px]">
+    return features.map((feature, index) => (
+      <div
+        key={index}
+        className="bg-opacity-50 bg-[#28261c] border border-border rounded-xl px-[20px] py-[20px] md:px-[30px] md:py-[30px]"
+      >
         <img
           src={feature.image}
           alt="feature icon"
           className="w-[60px] h-[60px] md:w-[96px] md:h-[96px]"
         />
-        <h3 className="text-[28px] md:text-[32px] text-black">{feature.title}</h3>
+        <h3 className="text-[28px] md:text-[32px] text-black">
+          {feature.title}
+        </h3>
         <p className="text-[14px] md:text-[16px] text-black">
           {feature.content}
         </p>
@@ -53,7 +57,9 @@ const Features = () => {
       className="min-w-screen py-[10vh] bodyPadding flex items-center relative"
     >
       <section>
-        <h3 className="text-[32px] mb-5 md:mb-8 md:text-[56px] text-black">Features</h3>
+        <h3 className="text-[32px] mb-5 md:mb-8 md:text-[56px] text-black">
+          Features
+        </h3>
         <section className="grid grid-cols-1 md:grid-cols-2 gap-10 z-10">
           {renderFeatures()}
         </section>

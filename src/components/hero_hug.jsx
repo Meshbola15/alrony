@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useRef } from "react";
 import hug_1 from "../assets/hug_images/image/hug-1.svg";
 import hug_2 from "../assets/hug_images/image/hug-2.svg";
 import hug_3 from "../assets/hug_images/image/hug-3.svg";

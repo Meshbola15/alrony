@@ -1,6 +1,4 @@
-import React from "react";
 import hero_image from "../assets/images/hero_pix.svg";
-import hero_monkey_nft from "../assets/images/hero_monkey_nft.svg";
 
 const Hero = () => {
   return (

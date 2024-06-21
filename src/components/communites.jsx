@@ -1,4 +1,3 @@
-import React from "react";
 import communityBg from "../assets/images/community_bg.jpg";
 import { FaXTwitter, FaDiscord, FaRedditAlien } from "react-icons/fa6";
 import { BiLogoTelegram } from "react-icons/bi";
