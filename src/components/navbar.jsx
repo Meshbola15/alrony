@@ -16,7 +16,7 @@ const MobileNavLinks = ({ setIsOpen }) => (
     <ul className="flex flex-col items-center">
       <NavMenu setIsOpen={setIsOpen} />
     </ul>
-    <button className="px-7 py-3 bg-blue rounded-3xl mt-4">
+    <button className="px-7 py-3 bg-blue rounded-3xl mt-4 text-[18px]">
       Join the revolution
     </button>
   </div>
@@ -26,7 +26,7 @@ const NavMenu = ({ setIsOpen }) => (
   <>
     {navlinks.map((link, index) => (
       <li key={index} className="flex cursor-pointer" onClick={() => setIsOpen(false)}>
-        <a className="cursor-pointer text-[12px] md:text-[12px] lg:text-[16px]" href={link.path}>
+        <a className="cursor-pointer text-[20px] md:text-[12px] lg:text-[16px]" href={link.path}>
           {link.name}
         </a>
       </li>

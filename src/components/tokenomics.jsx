@@ -5,8 +5,8 @@ import donut_mobile from "../assets/images/all_donut_mobile.svg";
 const Tokenomics = () => {
   return (
     <div id="tokenomics" className="text-left md:text-center bodyPadding py-[10vh]">
-      <h3 className="text-white text-[32px] md:text-[56px]">Tokenomics</h3>
-      <p className="text-white text-[16px] md:text-[32px] mb-10 md:mb-20">
+      <h3 className="text-black text-[32px] md:text-[56px]">Tokenomics</h3>
+      <p className="text-black text-[16px] md:text-[32px] mb-10 md:mb-20">
         Total Supply
         <span className="text-blue font-bold"> 1,000,000,000 IRONY</span>
       </p>
