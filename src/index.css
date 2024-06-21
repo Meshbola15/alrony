@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Bricolage Grotesque", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .communityLink {
+    @apply border border-blue rounded-full h-[50px] w-[50px] flex items-center justify-center text-blue;
+  }
+
+  .bodyPadding {
+    @apply px-[5vw] md:px-[8vw] lg:px-[9vw];
+  }
+
+  .menuIcon {
+    @apply cursor-pointer w-[24px] h-[2px] bg-white my-[4.5px] transition-[0.4s];
+  }
+}
+
+
