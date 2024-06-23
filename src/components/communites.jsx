@@ -62,7 +62,7 @@ const Communities = () => {
               placeholder="Email"
               className="text-[18px] placeholder:text-blue lg:text-[16px] w-full md:w-[200px] lg:w-[300px] bg-[#080F327A] text-blue px-5 py-3 md:px-4 md:py-2 rounded-xl font-light hover:outline-none border-none focus:outline-none"
             />
-            <button className="px-5 py-3 md:px-7 md:py-2 rounded-xl bg-blackBackground font-light text-blue text-[16px] w-full md:w-auto">
+            <button className="px-5 py-3 md:px-7 md:py-2 rounded-xl bg-blackBackground font-light text-blue text-[16px] w-full md:w-auto hover:bg-white">
               Subscribe
             </button>
           </form>
@@ -72,16 +72,16 @@ const Communities = () => {
           id="contact"
           className="flex flex-col items-center justify-between gap-4 md:flex-row md:gap-0 my-5 text-blackBackground"
         >
-          <ul className="flex text-[14px] capitalize gap-2 md:gap-5 flex-wrap">
+          <ul className="flex text-[14px] capitalize gap-2 md:gap-5 flex-wrap ">
             {footerHrefLink.map((item, index) => (
               <li key={`footerHref-${index}`}>
-                <a href={item.path}>{item.name}</a>
+                <a href={item.path} className="hover:text-white">{item.name}</a>
               </li>
             ))}
             <hr className="w-[1px] border-none h-[12px] md:h-[14px] bg-blackBackground self-center" />
             {footerPrivacyLink.map((item, index) => (
               <li key={`footerPrivacy-${index}`}>
-                <a href={item.path}>{item.name}</a>
+                <a href={item.path} className="hover:text-white">{item.name}</a>
               </li>
             ))}
           </ul>
@@ -91,7 +91,7 @@ const Communities = () => {
                 key={`footerIcon-${index}`}
                 className="text-blackBackground h-8 w-8 flex items-center justify-center border border-black rounded-full cursor-pointer hover:bg-black hover:text-blue"
               >
-                <a href={item.link} className="text-[20px]">
+                <a href={item.link} className="text-[20px] ">
                   {item.icon}
                 </a>
               </div>

@@ -17,7 +17,7 @@ const MobileNavLinks = ({ setIsOpen }) => (
     <ul className="flex flex-col items-center gap-4">
       <NavMenu setIsOpen={setIsOpen} />
     </ul>
-    <button className="px-7 py-3 bg-blue rounded-3xl mt-4 text-[18px]">
+    <button className="px-7 py-3 bg-blue rounded-3xl mt-4 text-[18px] hover:text-blue hover:bg-white">
       Join the revolution
     </button>
   </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
               <ul className="bg-lightBlue px-5 py-3 rounded-3xl flex gap-1">
                 <NavMenu setIsOpen={setIsOpen} />
               </ul>
-              <button className="ml-3 lg:ml-5 px-4 py-2 lg:px-7 md:py-3 bg-blue rounded-3xl text-[14px]">
+              <button className="ml-3 lg:ml-5 px-4 py-2 lg:px-7 md:py-3 bg-blue rounded-3xl text-[14px] hover:text-blue hover:bg-white">
                 Join the revolution
               </button>
             </div>

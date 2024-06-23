@@ -37,7 +37,7 @@ const Hero = () => {
           </p>
           <a
             href="#"
-            className="text-black bg-blue px-5 py-2 rounded-full text-[16px]"
+            className="text-black bg-blue px-7 py-3 rounded-full text-[16px] hover:bg-white hover:text-blue"
           >
             Get Started
           </a>
