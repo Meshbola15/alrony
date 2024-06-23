@@ -40,7 +40,7 @@ const Communities = () => {
               <a
                 key={index}
                 href={item.link}
-                className="text-[25px] text-blue w-[50px] h-[50px] border border-blue rounded-full flex items-center justify-center"
+                className="text-[25px] text-blue w-[50px] h-[50px] border border-blue rounded-full flex items-center justify-center hover:bg-blue hover:text-white"
               >
                 {item.icon}
               </a>
@@ -89,7 +89,7 @@ const Communities = () => {
             {footerLink.map((item, index) => (
               <div
                 key={`footerIcon-${index}`}
-                className="text-blackBackground h-8 w-8 flex items-center justify-center border border-black rounded-full cursor-pointer"
+                className="text-blackBackground h-8 w-8 flex items-center justify-center border border-black rounded-full cursor-pointer hover:bg-black hover:text-blue"
               >
                 <a href={item.link} className="text-[20px]">
                   {item.icon}

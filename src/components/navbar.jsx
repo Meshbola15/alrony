@@ -14,7 +14,7 @@ const navlinks = [
 // eslint-disable-next-line react/prop-types
 const MobileNavLinks = ({ setIsOpen }) => (
   <div className="h-[100vh] w-full bg-black flex flex-col items-center justify-center">
-    <ul className="flex flex-col items-center">
+    <ul className="flex flex-col items-center gap-4">
       <NavMenu setIsOpen={setIsOpen} />
     </ul>
     <button className="px-7 py-3 bg-blue rounded-3xl mt-4 text-[18px]">
@@ -27,7 +27,7 @@ const MobileNavLinks = ({ setIsOpen }) => (
 const NavMenu = ({ setIsOpen }) => (
   <>
     {navlinks.map((link, index) => (
-      <li key={index} className="flex cursor-pointer" onClick={() => setIsOpen(false)}>
+      <li key={index} className="flex cursor-pointer hover:bg-blue px-3 py-1 rounded-2xl hover:bg-opacity-75" onClick={() => setIsOpen(false)}>
         <a className="cursor-pointer text-[20px] md:text-[12px] lg:text-[16px]" href={link.path}>
           {link.name}
         </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
 
             {/* Desktop */}
             <div className="hidden md:flex lg:flex items-center">
-              <ul className="bg-lightBlue px-5 py-3 rounded-3xl flex gap-2 lg:gap-6">
+              <ul className="bg-lightBlue px-5 py-3 rounded-3xl flex gap-1">
                 <NavMenu setIsOpen={setIsOpen} />
               </ul>
               <button className="ml-3 lg:ml-5 px-4 py-2 lg:px-7 md:py-3 bg-blue rounded-3xl text-[14px]">
